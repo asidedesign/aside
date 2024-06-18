@@ -1,0 +1,52 @@
+@layer support, intro;
+
+@layer intro {
+  aside {
+    /* ease first and last alignment */
+    display: grid;
+    color: #202124;
+    
+    & > h1 {
+      font-size: max(1rem, 15cqmin);
+
+      
+      &:first-of-type {
+        writing-mode: vertical-rl;
+        place-self: start;
+        line-height: 1.25ch;
+      }
+      &:nth-of-type(2) {
+        /* 1 capital tight lh with room for spacing */
+        line-height: 1.1cap;
+        /* text-transform: uppercase; */
+        color: #ff0066;
+      }
+      &:last-of-type {
+        writing-mode: vertical-lr;
+        place-self: end;
+        /* this value feels right – lines up naturally */
+        line-height: 0.75ex;
+      }
+    }
+  }
+}
+
+@layer support {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html {
+    block-size: 100%;
+    color-scheme: dark light;
+  }
+
+  body {
+    min-block-size: 100%;
+    font-family: system-ui, sans-serif;
+
+    display: grid;
+    place-content: center;
+  }
+}
