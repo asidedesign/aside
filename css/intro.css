@@ -1,15 +1,16 @@
+/* credits : codepen.io/argyleink/pen/abrmJjV */
 @layer support, intro;
 
 @layer intro {
   aside {
     /* ease first and last alignment */
     display: grid;
-    color: #202124;
+    color: #2e2e2e;
     
     & > h1 {
       font-size: max(1rem, 15cqmin);
+      text-transform: lowercase;
 
-      
       &:first-of-type {
         writing-mode: vertical-rl;
         place-self: start;
@@ -24,8 +25,8 @@
       &:last-of-type {
         writing-mode: vertical-lr;
         place-self: end;
-        /* this value feels right – lines up naturally */
         line-height: 0.75ex;
+        color: #3e3e3e;
       }
     }
   }
