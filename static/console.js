@@ -1,18 +1,19 @@
-/*  ¯\_(ツ)_/¯  */
+/*   ¯\_(ツ)_/¯   */
 
-var r='\n\n' +
-'                              _|              \n'+
-'                              _|              \n'+
-'  _|_|_|    _|_|_|  _|    _|_|_|    _|_|      \n'+
-'_|    _|  _|_|      _|  _|    _|  _|_|_|_|    \n'+
-'_|    _|      _|_|  _|  _|    _|  _|          \n'+
-'  _|_|_|  _|_|_|    _|    _|_|_|    _|_|_|    \n\n'+
+var r='\n' +
+'                              _|                         _|                                             \n'+
+'                              _|                         _|                                             \n'+
+'  _|_|_|    _|_|_|  _|    _|_|_|    _|_|             _|_|_|    _|_|      _|_|_|  _|    _|_|_|  _|  _|_| \n'+
+'_|    _|  _|_|      _|  _|    _|  _|_|_|_|         _|    _|  _|_|_|_|  _|_|      _|  _|    _|  _|_|  _| \n'+
+'_|    _|      _|_|  _|  _|    _|  _|               _|    _|  _|            _|_|  _|  _|    _|  _|    _| \n'+
+'  _|_|_|  _|_|_|    _|    _|_|_|    _|_|_|    _|     _|_|_|    _|_|_|  _|_|_|    _|    _|_|_|  _|    _| \n'+
+'                                                                                     _|    _|           \n'+
+'                                                                                       _|_|             \n\n'+
 'Visit http://aside.design/info \n\n';
 console.log(r);
 
 
-/* update favicon */
-
+/* Favicon Theme */
 function updateFavicon() {
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const favicon = document.getElementById('favicon');
