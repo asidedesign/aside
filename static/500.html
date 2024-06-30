@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aside.design</title>
     <link href="../css/intro.css" rel="stylesheet"/>
-    <link id="favicon" rel="icon" href="../favicon.png" type="image/png">
+    <link id="favicon" rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
     <aside>
@@ -13,22 +13,7 @@
         <h1>0</h1>
         <h1>0</h1>
     </aside>
-    <script>
-        function updateFavicon() {
-          const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const favicon = document.getElementById('favicon');
-          if (isDarkMode) {
-            favicon.href = 'favicon-dark.png';
-          } else {
-            favicon.href = 'favicon.png';
-          }
-        }
-    
-        // Initial call to set the favicon based on the current preference
-        updateFavicon();
-    
-        // Listen for changes in the color scheme
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
-      </script>
+
+    <script defer="defer" src="../static/console.js"></script>
 </body>
 </html>
