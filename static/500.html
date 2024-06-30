@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>500</title>
+    <title>aside.design</title>
+    <link href="../css/intro.css" rel="stylesheet"/>
+    <link id="favicon" rel="icon" href="../favicon.png" type="image/png">
 </head>
 <body>
-    <h1>500</h1>
+    <aside>
+        <h1>5</h1>
+        <h1>0</h1>
+        <h1>0</h1>
+    </aside>
+    <script>
+        function updateFavicon() {
+          const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const favicon = document.getElementById('favicon');
+          if (isDarkMode) {
+            favicon.href = 'favicon-dark.png';
+          } else {
+            favicon.href = 'favicon.png';
+          }
+        }
+    
+        // Initial call to set the favicon based on the current preference
+        updateFavicon();
+    
+        // Listen for changes in the color scheme
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+      </script>
 </body>
 </html>
