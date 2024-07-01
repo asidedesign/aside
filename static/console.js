@@ -18,9 +18,9 @@ function updateFavicon() {
     const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const favicon = document.getElementById('favicon');
     if (isDarkMode) {
-      favicon.href = 'favicon-dark.png';
+      favicon.href = '../favicon-dark.png';
     } else {
-      favicon.href = 'favicon.png';
+      favicon.href = '../favicon.png';
     }
   }
 
@@ -29,3 +29,5 @@ function updateFavicon() {
 
   // Listen for changes in the color scheme
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+
+
