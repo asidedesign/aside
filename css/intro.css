@@ -19,7 +19,6 @@
       &:nth-of-type(2) {
         /* 1 capital tight lh with room for spacing */
         line-height: 1.1cap;
-        /* text-transform: uppercase; */
         color: #ff0066;
       }
       &:last-of-type {
@@ -44,6 +43,7 @@
   }
 
   body {
+    min-width: 320px;
     min-block-size: 100%;
     font-family: system-ui, sans-serif;
 

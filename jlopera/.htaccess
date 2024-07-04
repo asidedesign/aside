@@ -19,3 +19,7 @@ RewriteRule ^(.+)/$ /$1 [L,R=301]
 ErrorDocument 404 /static/404.html
 ErrorDocument 403 /static/403.html
 ErrorDocument 500 /static/500.html
+
+# Map requests from sub.website.com/styles to website.com/styles.
+RewriteCond %{HTTP_HOST} ^sub\.website\.com$
+RewriteRule ^styles/(.*)$ /styles/$1 [L]
